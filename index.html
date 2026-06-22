@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TE AO MAORI - Māori Kültürü Tanıtım Sitesi</title>
+  <meta name="description" content="Yeni Zelanda'nın (Te Ao Maori) yerli halkı Māori'lerin zengin mitolojisini, sanatını, geleneksel Hāngī yemeğini ve Haka dansını keşfedin.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- --- Header / Navigasyon --- -->
+  <header id="header">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Te Ao Māori Logo" class="logo-icon">
+      <img src="assets/logo-text.png" alt="TE AO MAORI" class="logo-text">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero" class="active">Ana Sayfa</a></li>
+        <li><a href="#mythology">Mitoloji & Tarih</a></li>
+        <li><a href="#arts">Sanat & Dans</a></li>
+        <li><a href="#hangi">Yemek (Hāngī)</a></li>
+        <li><a href="#values">Değerler</a></li>
+        <li><a href="#explore">Keşfet</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content-left">
+        <span class="hero-badge">Te Ao Maori'ye Hoş Geldiniz</span>
+        <h1 class="hero-title">Kia Ora!</h1>
+        <p class="hero-subtitle">Yeni Zelanda topraklarının yerli halkı Māori'lerin kadim dünyasına, doğayla iç içe geçen mitolojisine ve büyüleyici geleneklerine yolculuğa çıkın.</p>
+        <div class="hero-buttons">
+          <a href="#mythology" class="btn btn-primary">Keşfe Başla</a>
+          <a href="#explore" class="btn btn-secondary">Haritayı Gör</a>
+        </div>
+      </div>
+      <div class="hero-mascot-right">
+        <img src="assets/mascot.png" alt="Te Ao Māori Maskotu" class="mascot-img">
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Aşağı Kaydır</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- --- Tarihçe ve Mitoloji --- -->
+  <section id="mythology">
+    <div class="grid-2">
+      <div>
+        <h2>Mitoloji &amp; Kökenler</h2>
+        <p style="margin-bottom: 2rem;">Māori halkı için evren, yaratılışın derin anlatıları ve tanrıların soyağacı üzerine kuruludur. İnsan ile doğa arasındaki bağ, bu mitolojik kökenlerle açıklanır.</p>
+        
+        <div class="myth-nav">
+          <button class="myth-tab active" data-tab="creation">Yaratılış Miti</button>
+          <button class="myth-tab" data-tab="migration">Büyük Göç</button>
+        </div>
+
+        <!-- Sekme 1: Yaratılış -->
+        <div id="creation" class="myth-content active">
+          <p style="margin-bottom: 1.5rem;"><strong>Ranginui (Gökyüzü Babası)</strong> ve <strong>Papatūānuku (Yeryüzü Anası)</strong>, evrenin başlangıcında birbirlerine sıkıca sarılmışlardı. Bu kucaklaşma dünyayı karanlığa boğuyor, çocuklarının (tanrıların) ışıkta yaşamasına engel oluyordu.</p>
+          <p style="margin-bottom: 1.5rem;">Sonunda, ormanların tanrısı <strong>Tāne Mahuta</strong> sırtını yeryüzüne, ayaklarını gökyüzüne dayayarak anne ve babasını birbirinden ayırdı. Gökyüzü yukarıya yükseldi, yeryüzü aşağıda serildi; böylece ışık dünyaya girdi ve yaşam başladı.</p>
+          <div class="decorative-koru">
+            <svg viewBox="0 0 100 20" width="100%" height="20" fill="currentColor">
+              <path d="M0,10 Q25,0 50,10 T100,10" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Sekme 2: Göç -->
+        <div id="migration" class="myth-content">
+          <p style="margin-bottom: 1.5rem;">Māori'lerin kökeni, Pasifik'teki efsanevi anavatanları olan <strong>Hawaiki</strong>'ye dayanır. Yaklaşık MS 1300 civarında, kaşif **Kupe** liderliğindeki büyük okyanus kanolarıyla (Waka) güneye doğru yelken açtılar.</p>
+          <p style="margin-bottom: 1.5rem;">Ufukta beyaz, uzun bulutlar gördüler ve bu topraklara **Te Ao Maori** (Uzun Beyaz Bulutun Ülkesi) adını verdiler. Gelen yedi büyük kano, bugün Māori kabilelerinin (Iwi) temel soy bağlarını oluşturur.</p>
+          <div class="decorative-koru">
+            <svg viewBox="0 0 100 20" width="100%" height="20" fill="currentColor">
+              <path d="M0,10 Q25,20 50,10 T100,10" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Māori Dünya Görüşü</h3>
+          <p style="margin-bottom: 1.5rem; line-height: 1.8;">Māori inancında her nesnenin ve canlının bir **Mana**'sı (manevi güç/saygınlık) ve **Mauri**'si (yaşam gücü) vardır. İnsanlar doğanın efendisi değil, onun birer koruyucusu ve akrabasıdır.</p>
+          <p style="line-height: 1.8;">Doğayla kurulan bu dengeli ilişki, günümüzde de çevre koruma politikalarında Yeni Zelanda'da yasal olarak tanınan ve uygulanan bir felsefedir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Sanatlar ve Performans --- -->
+  <section id="arts" style="background-color: var(--bg-secondary); max-width: 100%;">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+      <div style="text-align: center;">
+        <h2>Sanat, Ritüel &amp; Gösteri</h2>
+        <p style="max-width: 600px; margin: 0 auto 3rem auto;">Māori kültürü, beden dili, müzik ve ahşap oymacılığıyla kendini dışa vuran son derece güçlü bir görsel dile sahiptir.</p>
+      </div>
+
+      <div class="arts-grid">
+        <!-- Haka Dansı -->
+        <div class="art-card">
+          <img src="assets/haka-dance.png" alt="Māori Haka Dansı" class="art-card-img">
+          <div class="art-card-overlay">
+            <h3>Haka Dansı</h3>
+            <p>Sadece bir savaş dansı değil; aynı zamanda saygı, kutlama ve birliktelik ifadesidir. Vücudun her hücresiyle hissedilen güçlü bir meydan okuma ritüeli.</p>
+            <a href="javascript:void(0)" class="art-modal-btn" onclick="openModal('haka-modal')">
+              Sözleri ve Detayları Gör
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tā Moko -->
+        <div class="art-card">
+          <img src="assets/gallery/maori-ta-moko.png" alt="Tā Moko Dövme Sanatı" class="art-card-img">
+          <div class="art-card-overlay">
+            <h3>Tā Moko</h3>
+            <p>Māori dövme sanatıdır. Deriye kazınan her çizgi, kişinin soyunu, kabile içindeki konumunu, başarılarını ve kişisel kimliğini sembolize eder.</p>
+            <a href="javascript:void(0)" class="art-modal-btn" onclick="openModal('moko-modal')">
+              Sembolleri Keşfet
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Whakairo -->
+        <div class="art-card">
+          <img src="assets/gallery/maori-carving.png" alt="Whakairo Ahşap Oymacılığı" class="art-card-img">
+          <div class="art-card-overlay">
+            <h3>Whakairo</h3>
+            <p>Geleneksel ahşap oymacılığı. İnşa edilen toplantı evleri (Wharenui) ve kanolar (Waka), oymalar aracılığıyla kabilenin tarihini anlatır.</p>
+            <a href="javascript:void(0)" class="art-modal-btn" onclick="openModal('carving-modal')">
+              Motiflerin Anlamı
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Haka İnteraktif Bölümü -->
+      <div class="haka-interactive">
+        <h3 style="color: var(--accent-gold); margin-bottom: 1rem; font-family: var(--font-title);">Ka Mate! Ka Mate! (Haka Ritüeli)</h3>
+        <p style="margin-bottom: 2rem; max-width: 800px;">Haka dansının en bilinen türü olan **Ka Mate**, Şef Te Rauparaha tarafından düşmanlarından kaçarken ve ölümden kurtulduğunda yazılmıştır. Kelime anlamı "Ölüm mü, Yaşam mı?" sorusunu barındırır.</p>
+        
+        <div class="haka-lyrics">
+          <div>
+            <h4 style="margin-bottom: 1rem; color: var(--accent-gold);">Māori Dilinde</h4>
+            <div class="lyrics-maori">
+              Ka mate, ka mate! Ka ora, ka ora!<br>
+              Ka mate, ka mate! Ka ora, ka ora!<br>
+              Tēnei te tangata pūhuruhuru<br>
+              Nāna nei i tiki mai whakawhiti te rā!
+            </div>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 1rem; color: var(--text-primary);">Türkçe Anlamı</h4>
+            <div class="lyrics-translation">
+              Ölüyorum! Ölüyorum! Yaşıyorum! Yaşıyorum!<br>
+              Ölüyorum! Ölüyorum! Yaşıyorum! Yaşıyorum!<br>
+              İşte bu tüylü adam (kurtarıcı)<br>
+              Güneşi getiren ve parıldamasını sağlayan!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Geleneksel Yemek: Hāngī --- -->
+  <section id="hangi">
+    <div class="grid-2">
+      <div>
+        <h2>Hāngī: Toprak Altı Lezzeti</h2>
+        <p style="margin-bottom: 2rem;">Hāngī, Māori halkının bin yılı aşkın süredir özel günlerde ve topluluk etkinliklerinde kullandığı geleneksel toprak altı fırınlama tekniğidir. Yemeklere benzersiz bir isli ve yumuşak lezzet kazandırır.</p>
+        
+        <div class="hangi-steps">
+          <div class="hangi-step active" data-step="1">
+            <div class="hangi-step-num">01</div>
+            <div>
+              <h3>Çukurun Kazılması (Umu)</h3>
+              <p>Toprakta derin bir çukur kazılır. Bu çukur yemeğin pişeği doğal fırındır.</p>
+            </div>
+          </div>
+
+          <div class="hangi-step" data-step="2">
+            <div class="hangi-step-num">02</div>
+            <div>
+              <h3>Volkanik Taşların Isıtılması</h3>
+              <p>Çukurun içine büyük volkanik taşlar konur ve üzerlerinde güçlü bir odun ateşi yakılır. Taşlar kor haline gelene kadar saatlerce ısıtılır.</p>
+            </div>
+          </div>
+
+          <div class="hangi-step" data-step="3">
+            <div class="hangi-step-num">03</div>
+            <div>
+              <h3>Yemeklerin Hazırlanması</h3>
+              <p>Pork, kuzu eti, tavuk, patates ve tatlı patatesler (kūmara) geleneksel olarak keten yapraklarına sarılarak sepetlere yerleştirilir.</p>
+            </div>
+          </div>
+
+          <div class="hangi-step" data-step="4">
+            <div class="hangi-step-num">04</div>
+            <div>
+              <h3>Toprakla Kapatma &amp; Pişirme</h3>
+              <p>Sepetler sıcak taşların üzerine yerleştirilir. Üzerleri ıslak çuvallarla ve tamamen toprakla kapatılarak buharın içeride kalması sağlanır. 3-4 saat yavaşça pişer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hangi-visual-container">
+        <img src="assets/hangi-feast.png" alt="Māori Hāngī Yemeği Hazırlanışı">
+        <div class="hangi-overlay"></div>
+        
+        <!-- Buhar Animasyonu Öğeleri -->
+        <div class="hangi-steam" id="hangi-steam">
+          <div class="steam-bubble"></div>
+          <div class="steam-bubble"></div>
+          <div class="steam-bubble"></div>
+          <div class="steam-bubble"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Kültürel Değerler --- -->
+  <section id="values" style="background-color: var(--bg-secondary); max-width: 100%;">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+      <div style="text-align: center;">
+        <h2>Kültürel Değerler</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Māori toplumunu ayakta tutan ve Yeni Zelanda'nın genel kültürüne de yön veren üç temel ahlaki sütun.</p>
+      </div>
+
+      <div class="values-grid">
+        <!-- Değer 1: Manaakitanga -->
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+            </svg>
+          </div>
+          <div class="maori-word">Cömertlik &amp; Misafirperverlik</div>
+          <h3>Manaakitanga</h3>
+          <p>Karşılıklı saygı, cömertlik ve misafirperverlik esasına dayanır. Topluluktaki herkesin refahını önemsemek ve misafirleri en iyi şekilde ağırlamak bu değerin özüdür.</p>
+        </div>
+
+        <!-- Değer 2: Kaitiakitanga -->
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18c-2.76,0 -5,-2.24 -5,-5c0,-1.5 0.67,-2.85 1.73,-3.77L12,12.5l3.27,-3.27C16.33,10.15 17,11.5 17,13C17,15.76 14.76,18 12,18Z"/>
+            </svg>
+          </div>
+          <div class="maori-word">Doğanın Koruyuculuğu</div>
+          <h3>Kaitiakitanga</h3>
+          <p>İnsanların doğanın sahibi değil, onun birer parçası ve vasisi olduğu inancıdır. Gelecek nesiller için nehirleri, ormanları ve okyanusları koruma sorumluluğunu ifade eder.</p>
+        </div>
+
+        <!-- Değer 3: Whanaungatanga -->
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15.22 17,16.75V19.25H21.5V16.75C21.5,14.67 17.83,13.5 16,13M8,13C6.17,13 2.5,14.17 2.5,16.25V18.75H13.5V16.25C13.5,14.17 9.83,13 8,13M8,5A3.5,3.5 0 0,0 4.5,8.5A3.5,3.5 0 0,0 8,12A3.5,3.5 0 0,0 11.5,8.5A3.5,3.5 0 0,0 8,5M16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5Z"/>
+            </svg>
+          </div>
+          <div class="maori-word">Akrabalık &amp; Topluluk Bağı</div>
+          <h3>Whanaungatanga</h3>
+          <p>Ortak deneyimler ve işbirliği yoluyla kurulan güçlü aile, kabile ve topluluk ilişkilerini temsil eder. Bireysellikten ziyade kolektif güç ve dayanışmayı yüceltir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- İnteraktif Keşif: Harita ve Zaman Çizelgesi --- -->
+  <section id="explore">
+    <div style="text-align: center;">
+      <h2>Te Ao Maori'yi Keşfedin</h2>
+      <p style="max-width: 600px; margin: 0 auto 3rem auto;">Māori tarihinin en önemli coğrafi merkezlerini veya tarihsel gelişim çizgisini etkileşimli olarak inceleyin.</p>
+    </div>
+
+    <div class="section-toggle">
+      <button class="toggle-btn active" id="btn-map">İnteraktif Harita</button>
+      <button class="toggle-btn" id="btn-timeline">Zaman Çizelgesi</button>
+    </div>
+
+    <!-- 1. Harita Görünümü -->
+    <div class="map-view" id="map-view">
+      <div class="map-wrapper">
+        <!-- SVG Yeni Zelanda Harita Gösterimi (Sembolik & Stilize) -->
+        <svg class="nz-svg-map" viewBox="0 0 300 500" width="100%" height="100%">
+          <!-- Güney Adası Şekli (Stilize) -->
+          <path d="M70,280 L110,310 L150,380 L160,420 L150,450 L110,470 L90,440 L70,410 L50,350 L40,300 Z" fill="#131916" stroke="var(--accent-gold)" stroke-width="1.5"/>
+          <!-- Kuzey Adası Şekli (Stilize) -->
+          <path d="M120,240 L160,260 L180,240 L210,210 L230,190 L210,150 L190,160 L170,120 L180,90 L160,60 L140,80 L150,110 L110,150 L110,190 L120,210 Z" fill="#131916" stroke="var(--accent-gold)" stroke-width="1.5"/>
+          
+          <!-- Konum İşaretçileri (Dots) -->
+          <!-- 1. Waitangi (Kuzey Adası Kuzeyi) -->
+          <g class="map-dot active" data-location="waitangi">
+            <circle cx="150" cy="80" r="8" />
+          </g>
+          <!-- 2. Rotorua (Kuzey Adası İç Bölge) -->
+          <g class="map-dot" data-location="rotorua">
+            <circle cx="170" cy="160" r="8" />
+          </g>
+          <!-- 3. Hokianga (Kuzey Adası Batı) -->
+          <g class="map-dot" data-location="hokianga">
+            <circle cx="130" cy="95" r="8" />
+          </g>
+          <!-- 4. Milford Sound (Güney Adası Batı) -->
+          <g class="map-dot" data-location="milford">
+            <circle cx="70" cy="400" r="8" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="map-details">
+        <div class="map-info-card" id="location-card">
+          <h3 id="loc-title">Waitangi</h3>
+          <div class="location-sub" id="loc-sub">Milletin Doğum Yeri</div>
+          <p id="loc-desc">Waitangi, Yeni Zelanda'nın kurucu belgesi kabul edilen 'Waitangi Antlaşması'nın (Te Tiriti o Waitangi) 1840 yılında Māori şefleri ile İngiliz Krallığı arasında imzalandığı tarihi yerdir.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Zaman Çizelgesi Görünümü -->
+    <div class="timeline-view" id="timeline-view">
+      
+      <!-- Olay 1 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">MS ~1300</div>
+          <h4 class="timeline-title">Büyük Pasifik Göçü</h4>
+          <p>Māori'lerin anavatan Hawaiki'den çıkarak büyük okyanus kanolarıyla Yeni Zelanda'yı (Te Ao Maori) keşfetmesi ve buralara yerleşmesi.</p>
+        </div>
+      </div>
+
+      <!-- Olay 2 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">1642</div>
+          <h4 class="timeline-title">Avrupalılarla İlk Temas</h4>
+          <p>Hollandalı kaşif Abel Tasman'ın adaya ulaşması. Māori savaşçılarıyla yaşanan çatışmalar sonrası adayı terk etmesi.</p>
+        </div>
+      </div>
+
+      <!-- Olay 3 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">1840</div>
+          <h4 class="timeline-title">Waitangi Antlaşması</h4>
+          <p>Māori şefleri ile İngiliz Krallığı arasında ortak yönetim antlaşmasının imzalanması. İngilizce ve Māori dillerindeki çeviri farkları uzun yıllar sürecek toprak anlaşmazlıklarına yol açmıştır.</p>
+        </div>
+      </div>
+
+      <!-- Olay 4 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-date">1970'ler - Günümüz</div>
+          <h4 class="timeline-title">Māori Rönesansı</h4>
+          <p>Māori dilinin (Te Reo) resmi dil olması, kültürün, dövme sanatının ve okullarda Māori eğitiminin yaygınlaşarak kimlik haklarının güçlü bir şekilde geri kazanılması.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- Görsel Galeri --- -->
+  <section id="gallery">
+    <div style="text-align: center;">
+      <h2>Te Ao Maori Galerisi</h2>
+      <p style="max-width: 600px; margin: 0 auto 3rem auto;">Māori kültürünü ve topraklarını yansıtan etkileyici kareler.</p>
+    </div>
+
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Tümü</button>
+      <button class="filter-btn" data-filter="nature">Doğa</button>
+      <button class="filter-btn" data-filter="art">Sanat &amp; Ritüel</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Resim 1: Doğa -->
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/gallery/milford-sound.png" alt="Milford Sound Yeni Zelanda">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Milford Sound (Piopiotahi)</h4>
+          <span class="gallery-item-category">Doğa</span>
+        </div>
+      </div>
+
+      <!-- Resim 2: Haka -->
+      <div class="gallery-item" data-category="art">
+        <img src="assets/haka-dance.png" alt="Haka Dansı">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Haka Performansı</h4>
+          <span class="gallery-item-category">Sanat &amp; Ritüel</span>
+        </div>
+      </div>
+
+      <!-- Resim 3: Ahşap Oyma -->
+      <div class="gallery-item" data-category="art">
+        <img src="assets/gallery/maori-carving.png" alt="Māori Oymacılığı">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Whakairo (Ahşap Oyma Detayı)</h4>
+          <span class="gallery-item-category">Sanat</span>
+        </div>
+      </div>
+
+      <!-- Resim 4: Tā Moko -->
+      <div class="gallery-item" data-category="art">
+        <img src="assets/gallery/maori-ta-moko.png" alt="Tā Moko Portresi">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Tā Moko Dövme Sanatı</h4>
+          <span class="gallery-item-category">Sanat</span>
+        </div>
+      </div>
+
+      <!-- Resim 5: Hāngī -->
+      <div class="gallery-item" data-category="art">
+        <img src="assets/hangi-feast.png" alt="Hāngī Yemeği">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Hāngī Ziyafeti</h4>
+          <span class="gallery-item-category">Kültür &amp; Yaşam</span>
+        </div>
+      </div>
+
+      <!-- Resim 6: Doğa (Hero alternatifi) -->
+      <div class="gallery-item" data-category="nature">
+        <img src="assets/hero-bg.png" alt="Yeni Zelanda Manzarası">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title">Te Ao Maori Sahili</h4>
+          <span class="gallery-item-category">Doğa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Modallar --- -->
+  <!-- 1. Haka Modal -->
+  <div class="modal" id="haka-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('haka-modal')">&times;</button>
+      <h3 style="color: var(--accent-gold); margin-bottom: 1.5rem; font-family: var(--font-title);">Ka Mate Haka Ritüelinin Tamamı</h3>
+      <p style="margin-bottom: 2rem;">Aşağıda, en meşhur Māori Haka dansı olan **Ka Mate**'nin tam orijinal sözleri ve Türkçe karşılıkları yer almaktadır.</p>
+      
+      <table class="haka-full-lyrics">
+        <tr>
+          <td style="font-weight: 600; color: var(--accent-gold);">Kaea (Lider):</td>
+          <td style="font-style: italic;">Ringa pakia! Uma tiraha! Turi whatia! Hope nei heke iho! Waewae takahia kia kino!</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Lider Açıklama:</td>
+          <td>Ellerinizi uyluklarınıza vurun! Göğsünüzü kabartın! Dizlerinizi bükün! Kalçalarınızı indirin! Ayaklarınızı yere olabildiğince sert vurun!</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--accent-gold);">Katoa (Tüm Grup):</td>
+          <td style="font-style: italic;">Ka mate, ka mate! Ka ora, ka ora!<br>Ka mate, ka mate! Ka ora, ka ora!<br>Tēnei te tangata pūhuruhuru<br>Nāna nei i tiki mai whakawhiti te rā!<br>A Upane, ka Upane!<br>A Upane, ka Upane!<br>Whiti te rā! Hī!</td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600;">Grup Açıklama:</td>
+          <td>Ölüyorum, ölüyorum! Yaşıyorum, yaşıyorum!<br>Ölüyorum, ölüyorum! Yaşıyorum, yaşıyorum!<br>İşte bu kıl gövdeli adamdır<br>Güneşi getiren ve onun parıldamasını sağlayan!<br>Yukarı bir adım, daha yukarı bir adım!<br>Yukarı bir adım, daha yukarı bir adım!<br>Güneş parıldıyor! Hī! (Nefes verme sesi)</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2. Tā Moko Modal -->
+  <div class="modal" id="moko-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('moko-modal')">&times;</button>
+      <h3 style="color: var(--accent-gold); margin-bottom: 1.5rem; font-family: var(--font-title);">Tā Moko: Kimliğin Yüze Kazınması</h3>
+      <p style="margin-bottom: 1.5rem;">Tā moko, sıradan dövmelerden (Tatau) farklı olarak deri altına mürekkep enjekte edilerek değil, **Uhi** adı verilen kemikten keskilerle deride oluklar açılarak yapılır. Bu işlem büyük acılara dayanıklılık gerektirir ve kutsal (**Tapu**) bir törendir.</p>
+      <p style="margin-bottom: 1.5rem;"><strong>Yüz Bölgelerinin Anlamları:</strong></p>
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary);">
+        <li><strong style="color: var(--accent-gold);">Alın (Ngakaipikirau):</strong> Kişinin kabile içindeki rütbesini veya statüsünü gösterir.</li>
+        <li><strong style="color: var(--accent-gold);">Şakaklar (Ngunga):</strong> Evlilik durumunu ve kabile içindeki konumunu temsil eder.</li>
+        <li><strong style="color: var(--accent-gold);">Burun Altı (Raurau):</strong> Kişinin imzasını, kabile mülkiyet haklarını gösterir.</li>
+        <li><strong style="color: var(--accent-gold);">Çene (Moko Kauae):</strong> Özellikle kadınlarda soy ağacını, manevi gücü ve olgunluğu simgeler.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3. Whakairo Modal -->
+  <div class="modal" id="carving-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('carving-modal')">&times;</button>
+      <h3 style="color: var(--accent-gold); margin-bottom: 1.5rem; font-family: var(--font-title);">Whakairo Oymacılığında Temel Motifler</h3>
+      <p style="margin-bottom: 1.5rem;">Māori oymacılığındaki her spiral ve kıvrım, doğadaki bir öğeyi veya mitolojik bir hikayeyi temsil eder. En sık kullanılan üç motif şunlardır:</p>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">1. Koru (Eğrelti Otu Sarmalı)</h4>
+          <p>Yeni açılan bir gümüş eğrelti otu yaprağını simgeler. Yeni başlangıçlar, büyüme, güç, barış ve saflığı temsil eder.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">2. Hei Tiki</h4>
+          <p>İnsan benzeri, boynu eğik bir figürdür. Genellikle yeşim taşından (Pounamu) kolye olarak takılır. Doğurganlığı, iyi şansı, ataların ruhlarını ve bilgeliği temsil eder.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">3. Manaia</h4>
+          <p>Kuş başı, insan gövdesi ve balık kuyruğuna sahip mitolojik bir yaratıktır. Ruhlar dünyası ile maddi dünya arasında bir elçi ve koruyucu melek olarak kabul edilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo-side">
+        <a href="#" class="logo" style="margin-bottom: 1rem;">
+          <img src="assets/logo.png" alt="Te Ao Māori Logo" class="logo-icon" style="height: 60px;">
+          <img src="assets/logo-text.png" alt="TE AO MAORI" class="logo-text" style="height: 21px;">
+        </a>
+        <p>Māori kültürü, insanlığın doğayla kurduğu en köklü ve saygılı bağlardan birini temsil eder. Bu web sitesi, bu kadim mirası tanıtmak amacıyla tasarlanmıştır.</p>
+      </div>
+
+      <div class="footer-links-side">
+        <h4>Kültür Rehberi</h4>
+        <ul>
+          <li><a href="#mythology">Mitoloji &amp; Köken</a></li>
+          <li><a href="#arts">Haka Dansı &amp; Sanat</a></li>
+          <li><a href="#hangi">Geleneksel Hāngī</a></li>
+          <li><a href="#values">Değerler &amp; Ahlak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-side">
+        <h4>Bağlantılar</h4>
+        <ul>
+          <li><a href="#explore">Etkileşimli Harita</a></li>
+          <li><a href="#gallery">Görsel Galeri</a></li>
+          <li><a href="https://www.maori.cl/" target="_blank" rel="noopener">Māori Kültür Bilgi Ağı</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 TE AO MAORI. Tüm Hakları Saklıdır.</p>
+      <p>Kia Kaha - Güçlü Kal</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
