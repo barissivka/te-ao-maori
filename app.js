@@ -5,6 +5,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- Mobil Menü Toggles ---
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinksList = document.querySelectorAll('nav a');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Menü linklerine tıklandığında menüyü kapat
+    navLinksList.forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+
   // --- 1. Header Scroll Efekti ---
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
